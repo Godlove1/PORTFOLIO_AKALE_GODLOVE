@@ -1,0 +1,897 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Raleway:wght@100;200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --prm-color: rgb(5, 5, 5);
+  --clr:white;
+  --clr2:#08fdd8;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(180deg, #373734 0%, #242423 52%, #0D0D0C 100%);
+  color: white;
+  overflow: hidden scroll;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  color: var(--clr2);
+  font-size: 15px;
+  border: 1px solid var(--clr2);
+  border-radius: 0.5em;
+  width: 10em;
+  height: 3em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.1em;
+  z-index: 1;
+  margin: 1em;
+  transition: 0.5s;
+}
+nav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: #e84a5f;
+  border-radius: 50%;
+  transform: translateY(150%);
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+nav ul li:hover {
+  color: #fff;
+  cursor: pointer;
+  border: 1px solid #e84a5f;
+}
+nav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+nav ul span:nth-child(1) {
+  --n: 1;
+}
+nav ul span:nth-child(2) {
+  --n: 2;
+}
+nav ul span:nth-child(3) {
+  --n: 3;
+}
+nav ul span:nth-child(4) {
+  --n: 4;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(0deg, #000, #262626);
+  box-shadow: 1px 5px 15px rgb(0, 0, 0);
+  margin: 60px 0;
+}
+.container:before, .container:after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  background: linear-gradient(45deg, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000);
+  background-size: 400%;
+  z-index: -1;
+  animation: animate 20s linear infinite;
+}
+.container:after {
+  filter: blur(20px);
+}
+.container .skills {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.container .skills .skill {
+  background: linear-gradient(45deg, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000);
+  padding: 2px;
+  margin: 10px;
+  border-radius: 3px;
+}
+.container .skills .skill P {
+  background: black;
+  padding: 10px;
+}
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.bars {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background: var(--prm-color);
+  z-index: 1;
+}
+.bars .bar {
+  width: 100%;
+  height: 5px;
+  background-color: var(--clr);
+  margin: 3px;
+}
+
+.menu {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: grey;
+  display: none;
+  z-index: 3;
+}
+.menu .inner-menu {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .inner-menu .upper-menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: black;
+  padding: 50px 0 20px 0;
+}
+.menu .inner-menu .upper-menu #close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.menu .inner-menu .upper-menu #close:hover {
+  color: red;
+}
+.menu .inner-menu .upper-menu P {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #a5a5a5;
+}
+.menu .inner-menu .upper-menu .name {
+  cursor: pointer;
+}
+.menu .inner-menu .upper-menu .name .g {
+  text-shadow: -4px 2px red, -6px 2px var(--clr2);
+}
+.menu .inner-menu .upper-menu .name h1 {
+  font-size: 3rem;
+}
+.menu .inner-menu .lower-menu {
+  background: rgb(27, 27, 27);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .inner-menu .lower-menu ul {
+  width: 100%;
+  list-style: none;
+}
+.menu .inner-menu .lower-menu ul li {
+  width: 100%;
+  border-bottom: 1px solid #5a5a5a;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+.menu .inner-menu .lower-menu ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: silver;
+}
+.menu .inner-menu .lower-menu ul li a:hover {
+  color: #08fdd8;
+}
+.menu .inner-menu .socila {
+  width: 100%;
+  background: rgb(27, 27, 27);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu .inner-menu .socila img {
+  width: 24px;
+  margin: 0 5px;
+}
+
+.my-path {
+  fill: none;
+  stroke: var(--clr2);
+  stroke-width: 6;
+}
+
+#lineDrawing {
+  width: 340px;
+  height: 80px;
+  margin-left: -50px;
+  margin-top: 80px;
+}
+
+.top {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-top: 80px;
+  padding-left: 40px;
+}
+.top h1 {
+  font-family: "Raleway", sans-serif;
+}
+.top .a {
+  padding-top: 60px;
+}
+.top .name {
+  font-size: 1.5rem;
+  margin-top: 30px;
+}
+.top .name .g {
+  text-shadow: -4px 2px red, -6px 2px var(--clr2);
+  font-family: "Lobster", cursive;
+  letter-spacing: 4px;
+  margin-left: 15px;
+}
+.top .name .tagline {
+  font-size: 1rem;
+  padding-left: 60px;
+  color: #a5a5a5;
+}
+.top .scrollbtn {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+}
+.top .scrollbtn img {
+  width: 30px;
+  transform: rotate(-180deg);
+  animation: sliding 1s infinite ease-in-out;
+}
+@keyframes sliding {
+  from {
+    transform: translatey(20px);
+  }
+  to {
+    transform: translatey(0);
+  }
+}
+.top .bg-anime {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+.top .bg-anime .parts {
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+  margin: 5px;
+  animation: fade 0.6s infinite;
+}
+.top .bg-anime .p1 {
+  position: absolute;
+  background: red;
+  right: 0;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p2 {
+  position: absolute;
+  background: teal;
+  right: 50%;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p3 {
+  position: absolute;
+  background: red;
+  bottom: 200px;
+  animation-delay: 0.51s;
+}
+.top .bg-anime .p4 {
+  position: absolute;
+  background: var(--clr2);
+  top: 0;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p5 {
+  position: absolute;
+  background: var(--clr);
+  right: 30%;
+  animation-delay: 0.321s;
+}
+.top .bg-anime .p6 {
+  position: absolute;
+  background: teal;
+  right: 0;
+  bottom: 50%;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p7 {
+  position: absolute;
+  background: red;
+  right: 70%;
+  top: -50px;
+  animation-delay: 0.189s;
+}
+.top .bg-anime .p8 {
+  position: absolute;
+  background: teal;
+  right: 50%;
+  bottom: 56%;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p9 {
+  position: absolute;
+  background: orange;
+  top: 40px;
+  right: 50%;
+  animation-delay: 0.51s;
+}
+.top .bg-anime .p10 {
+  position: absolute;
+  background: red;
+  left: 20px;
+  animation-delay: 0.178s;
+}
+.top .bg-anime .p20 {
+  position: absolute;
+  background: teal;
+  left: 20%;
+  top: 60%;
+  animation-delay: 0.17s;
+}
+.top .bg-anime .p19 {
+  position: absolute;
+  background: var(--clr);
+  right: 0;
+  top: 20%;
+  animation-delay: 0.31s;
+}
+.top .bg-anime .p11 {
+  position: absolute;
+  background: teal;
+  right: 30%;
+  top: -10%;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p12 {
+  position: absolute;
+  background: var(--clr);
+  left: 20%;
+  top: 10%;
+  animation-delay: 0.4s;
+}
+.top .bg-anime .p13 {
+  position: absolute;
+  background: orange;
+  bottom: 30%;
+  left: 30%;
+  animation-delay: 0.5s;
+}
+.top .bg-anime .p14 {
+  position: absolute;
+  background: var(--clr2);
+  bottom: 30%;
+  left: 70%;
+  animation-delay: 0.14ms;
+}
+.top .bg-anime .p14 {
+  position: absolute;
+  background: var(--clr);
+  bottom: 70%;
+  left: 30%;
+  animation-delay: 0.19s;
+}
+.top .bg-anime .p15 {
+  position: absolute;
+  background: red;
+  bottom: 40%;
+  left: 70%;
+  animation-delay: 0.1s;
+}
+.top .bg-anime .p16 {
+  position: absolute;
+  background: var(--clr);
+  bottom: 30%;
+  left: 90%;
+  animation-delay: 0.3s;
+}
+.top .bg-anime .p17 {
+  position: absolute;
+  background: var(--clr);
+  top: -20%;
+  left: 50%;
+  animation-delay: 0.14s;
+}
+.top .bg-anime .p18 {
+  position: absolute;
+  background: cyan;
+  top: -20%;
+  left: 20%;
+  animation-delay: 0.1s;
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.portfolio {
+  margin: 150px 0 150px 0;
+  padding: 0 20px;
+}
+.portfolio h1 {
+  font-size: 55px;
+  color: var(--clr2);
+  margin: 30px 0;
+}
+.portfolio .desc p {
+  margin-bottom: 20px;
+}
+.portfolio .desc a {
+  text-decoration: none;
+  color: #08fdd8;
+}
+.portfolio .desc a:hover {
+  color: var(--clr);
+}
+.portfolio .work {
+  display: none;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.projects .project {
+  position: relative;
+  width: 180px;
+  overflow: hidden;
+  opacity: 0.5;
+}
+.projects .project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 0.3s ease-in;
+}
+.projects .project .view {
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.projects .project .view .info {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--clr2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomin 0.6s;
+}
+.projects .project .view .info a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.7rem;
+  font-weight: 300;
+  text-align: center;
+  transition: color 0.3s ease-in-out;
+}
+.projects .project .view .info a:hover {
+  color: white;
+}
+@keyframes zoomin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+.projects .project:hover > .view {
+  display: block;
+}
+.projects .project:hover {
+  opacity: 1;
+}
+.projects .project:hover > img {
+  transform: scale(1.1);
+}
+
+.about {
+  padding: 0 15px;
+  margin: 100px 0;
+}
+.about h1 {
+  color: var(--clr2);
+  font-size: 3rem;
+  margin: 15px 0;
+}
+.about .info .desc p {
+  font-size: 1.1rem;
+  margin: 20px 0;
+}
+.about .info .desc .special {
+  color: var(--clr2);
+}
+.about .info .desc .special:hover {
+  color: teal;
+}
+.about .me {
+  display: none;
+}
+
+.contact {
+  padding: 0 10px;
+}
+.contact h1 {
+  color: var(--clr2);
+  font-size: 3rem;
+}
+.contact p {
+  margin: 20px 0;
+}
+.contact .contact {
+  display: none;
+}
+
+.socials {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.socials p {
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.socials .soc-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials .soc-icons img {
+  width: 30px;
+  margin: 0 5px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 20px;
+}
+form .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+form .user-info input:first-child {
+  margin-right: 5px;
+}
+form input {
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+  padding-left: 20px;
+  background: rgb(32, 32, 32);
+  color: grey;
+  margin: 5px 0;
+  border: none;
+  text-transform: capitalize;
+}
+form input:focus {
+  outline: none;
+  border-bottom: 2px solid var(--clr2);
+}
+form textarea {
+  width: 100%;
+  max-height: 150px;
+  margin: 5px 0;
+  border: none;
+  background: rgb(32, 32, 32);
+  padding: 10px 20px;
+  color: silver;
+}
+form textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--clr2);
+}
+form textarea::-moz-placeholder {
+  font-size: 1.3rem;
+}
+form textarea::placeholder {
+  font-size: 1.3rem;
+}
+form input[type=submit] {
+  width: 50%;
+  background: transparent;
+  border: 1px solid var(--clr2);
+  color: var(--clr2);
+  letter-spacing: 3px;
+  font-size: 1rem;
+  padding: 0 10px;
+  margin: 30px 0 30px 150px;
+}
+
+.animation {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  color: white;
+  background: var(--prm-color);
+  z-index: 3;
+}
+.animation .load {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.animation .loading {
+  width: 100%;
+}
+.animation .loading .ml5 {
+  position: relative;
+  font-weight: 300;
+  font-size: 4.5em;
+  color: var(--clr2);
+}
+.animation .loading .ml5 .text-wrapper {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 0.05em;
+  padding-bottom: 0.15em;
+  line-height: 1em;
+  text-align: center;
+}
+.animation .loading .ml5 .line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 3px;
+  width: 100%;
+  background-color: var(--clr2);
+  transform-origin: 0.5 0;
+}
+.animation .loading .ml5 .ampersand {
+  font-family: Baskerville, serif;
+  font-style: italic;
+  font-weight: 400;
+  width: 1em;
+  margin-right: -0.1em;
+  margin-left: -0.1em;
+  opacity: 0;
+}
+.animation .loading .ml5 .letters {
+  display: inline-block;
+  opacity: 0;
+  font-size: 2.8rem;
+}
+
+@media (min-width: 992px) {
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .left .bars {
+    display: none;
+  }
+  .left .menu {
+    display: block;
+    position: relative;
+  }
+  .left #close {
+    display: none;
+  }
+  .right {
+    width: 85%;
+    margin-left: 15%;
+  }
+  .right .my-path {
+    stroke-width: 6;
+  }
+  .right #lineDrawing {
+    height: 120px;
+    margin-left: -35px;
+    margin-top: 20px;
+  }
+  .right .top {
+    padding-top: 20px;
+  }
+  .right .top .name {
+    font-size: 2.3rem;
+  }
+  .right .top .tagline {
+    font-size: 1.5rem;
+    padding-left: 100px;
+  }
+  .right .top .a {
+    padding-top: 70px;
+    padding-left: 150px;
+  }
+  .portfolio {
+    position: relative;
+  }
+  .portfolio .desc {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .portfolio .desc p {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .portfolio .desc .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .portfolio .desc .link a {
+    width: auto;
+    padding: 15px 50px;
+  }
+  .portfolio .work {
+    display: block;
+    position: absolute;
+    bottom: -270px;
+    right: 20px;
+    color: #5a5a5a;
+    z-index: -1;
+  }
+  .portfolio .work P {
+    font-size: 15rem;
+  }
+  .projects {
+    background: #0D0D0C;
+  }
+  .projects .project {
+    width: 380px;
+    opacity: 0.5;
+    overflow: hidden;
+  }
+  .projects .project img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .projects .project .view .info {
+    width: 150px;
+    height: 150px;
+  }
+  .projects .project .view .info a {
+    font-size: 1.3rem;
+    transition: color 0.3s ease-in;
+  }
+  .projects .project .view .info a:hover {
+    color: white;
+  }
+  .about {
+    position: relative;
+  }
+  .about .info .desc p {
+    font-size: 1.5rem;
+  }
+  .about .me {
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    right: 20px;
+    color: #5a5a5a;
+    z-index: -1;
+  }
+  .about .me P {
+    font-size: 15rem;
+  }
+  .contact {
+    position: relative;
+  }
+  .contact p {
+    font-size: 1.5rem;
+  }
+  .contact .contact {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: 20px;
+    color: #5a5a5a;
+    z-index: -1;
+  }
+  .contact .contact P {
+    font-size: 8rem;
+  }
+  .socials p {
+    margin: 10px;
+    font-size: 1.5rem;
+  }
+  form {
+    padding: 0 20px;
+  }
+  form .user-info {
+    width: 48%;
+  }
+  form input {
+    width: 48%;
+  }
+  form textarea {
+    width: 48%;
+  }
+  form input[type=submit] {
+    width: 20%;
+    margin: 50px -600px 30px 150px;
+  }
+}

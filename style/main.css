@@ -25,6 +25,10 @@ h1 {
   letter-spacing: 1px;
 }
 
+.special {
+  color: #08fdd8;
+}
+
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -86,7 +90,7 @@ nav ul span:nth-child(4) {
   width: 100%;
   background: linear-gradient(0deg, #000, #262626);
   box-shadow: 1px 5px 15px rgb(0, 0, 0);
-  margin: 60px 0;
+  margin: 10px 0;
 }
 .container:before, .container:after {
   content: "";
@@ -102,25 +106,6 @@ nav ul span:nth-child(4) {
 }
 .container:after {
   filter: blur(20px);
-}
-.container .skills {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-.container .skills .skill {
-  background: linear-gradient(45deg, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000, #fa7e1e, #f3da75, #00ffd5, #fd1d1d, #ff0000);
-  padding: 2px;
-  margin: 10px;
-  border-radius: 3px;
-}
-.container .skills .skill P {
-  background: black;
-  padding: 10px;
 }
 @keyframes animate {
   0% {
@@ -255,25 +240,29 @@ nav ul span:nth-child(4) {
   width: 340px;
   height: 80px;
   margin-left: -50px;
-  margin-top: 80px;
+  margin-top: 10px;
 }
 
 .top {
   position: relative;
   width: 100%;
-  height: 100vh;
   padding-top: 80px;
-  padding-left: 40px;
+  padding-bottom: 80px;
 }
 .top h1 {
   font-family: "Raleway", sans-serif;
 }
-.top .a {
+.top .contact_me {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 60px;
 }
 .top .name {
-  font-size: 1.5rem;
+  font-size: 3rem;
   margin-top: 30px;
+  padding-left: 40px;
 }
 .top .name .g {
   text-shadow: -4px 2px red, -6px 2px var(--clr2);
@@ -286,13 +275,10 @@ nav ul span:nth-child(4) {
   padding-left: 60px;
   color: #a5a5a5;
 }
-.top .scrollbtn {
-  position: absolute;
-  bottom: 180px;
-  left: 50%;
+.top .name h2 {
+  font-size: 1.2rem;
 }
-.top .scrollbtn img {
-  width: 30px;
+.top .scrollBtn img {
   transform: rotate(-180deg);
   animation: sliding 1s infinite ease-in-out;
 }
@@ -470,7 +456,7 @@ nav ul span:nth-child(4) {
 }
 
 .portfolio {
-  margin: 150px 0 150px 0;
+  margin: 150px 0 80px 0;
   padding: 0 20px;
 }
 .portfolio h1 {
@@ -492,71 +478,6 @@ nav ul span:nth-child(4) {
   display: none;
 }
 
-.projects {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.projects .project {
-  position: relative;
-  width: 180px;
-  overflow: hidden;
-  opacity: 0.5;
-}
-.projects .project img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  transition: transform 0.3s ease-in;
-}
-.projects .project .view {
-  display: none;
-  position: absolute;
-  top: 50%;
-  transform: translate(50%, -50%);
-}
-.projects .project .view .info {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background: var(--clr2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: zoomin 0.6s;
-}
-.projects .project .view .info a {
-  text-decoration: none;
-  color: black;
-  font-size: 0.7rem;
-  font-weight: 300;
-  text-align: center;
-  transition: color 0.3s ease-in-out;
-}
-.projects .project .view .info a:hover {
-  color: white;
-}
-@keyframes zoomin {
-  from {
-    transform: scale(0);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-.projects .project:hover > .view {
-  display: block;
-}
-.projects .project:hover {
-  opacity: 1;
-}
-.projects .project:hover > img {
-  transform: scale(1.1);
-}
-
 .about {
   padding: 0 15px;
   margin: 100px 0;
@@ -565,16 +486,6 @@ nav ul span:nth-child(4) {
   color: var(--clr2);
   font-size: 3rem;
   margin: 15px 0;
-}
-.about .info .desc p {
-  font-size: 1.1rem;
-  margin: 20px 0;
-}
-.about .info .desc .special {
-  color: var(--clr2);
-}
-.about .info .desc .special:hover {
-  color: teal;
 }
 .about .me {
   display: none;
@@ -611,64 +522,6 @@ nav ul span:nth-child(4) {
 .socials .soc-icons img {
   width: 30px;
   margin: 0 5px;
-}
-
-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 20px;
-}
-form .user-info {
-  display: flex;
-  justify-content: space-between;
-}
-form .user-info input:first-child {
-  margin-right: 5px;
-}
-form input {
-  width: 100%;
-  height: 50px;
-  font-size: 1.2rem;
-  padding-left: 20px;
-  background: rgb(32, 32, 32);
-  color: grey;
-  margin: 5px 0;
-  border: none;
-  text-transform: capitalize;
-}
-form input:focus {
-  outline: none;
-  border-bottom: 2px solid var(--clr2);
-}
-form textarea {
-  width: 100%;
-  max-height: 150px;
-  margin: 5px 0;
-  border: none;
-  background: rgb(32, 32, 32);
-  padding: 10px 20px;
-  color: silver;
-}
-form textarea:focus {
-  outline: none;
-  border-bottom: 2px solid var(--clr2);
-}
-form textarea::-moz-placeholder {
-  font-size: 1.3rem;
-}
-form textarea::placeholder {
-  font-size: 1.3rem;
-}
-form input[type=submit] {
-  width: 50%;
-  background: transparent;
-  border: 1px solid var(--clr2);
-  color: var(--clr2);
-  letter-spacing: 3px;
-  font-size: 1rem;
-  padding: 0 10px;
-  margin: 30px 0 30px 150px;
 }
 
 .animation {
@@ -817,29 +670,6 @@ form input[type=submit] {
   .portfolio .work P {
     font-size: 15rem;
   }
-  .projects {
-    background: #0D0D0C;
-  }
-  .projects .project {
-    width: 380px;
-    opacity: 0.5;
-    overflow: hidden;
-  }
-  .projects .project img {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  .projects .project .view .info {
-    width: 150px;
-    height: 150px;
-  }
-  .projects .project .view .info a {
-    font-size: 1.3rem;
-    transition: color 0.3s ease-in;
-  }
-  .projects .project .view .info a:hover {
-    color: white;
-  }
   .about {
     position: relative;
   }
@@ -873,25 +703,5 @@ form input[type=submit] {
   }
   .contact .contact P {
     font-size: 8rem;
-  }
-  .socials p {
-    margin: 10px;
-    font-size: 1.5rem;
-  }
-  form {
-    padding: 0 20px;
-  }
-  form .user-info {
-    width: 48%;
-  }
-  form input {
-    width: 48%;
-  }
-  form textarea {
-    width: 48%;
-  }
-  form input[type=submit] {
-    width: 20%;
-    margin: 50px -600px 30px 150px;
   }
 }

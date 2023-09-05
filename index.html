@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="N-dc-MhGpcDIh5NR_V6ufAq-lu2rcMtCt-SECtgoPsk" />
 <link rel="shortcut icon" href="icons/favicon.png" type="image/png">
 <meta name="keywords" content="Akale Godlove, Freelance web developers in Cameroon,Hire web developer in Cameroon,silicon mountain, tech communities in cameroon ,web Developers in cameroon,Top web developers in Cameroon,Web development community in Cameroon, Cameroonian web development companies, top web Developers in cameroon, building websites in cameroon">
 <meta name="description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
-<meta property="og:title" content=" Akale Godlove || Full-Stack Web Developer">
+<meta property="og:title" content="Akale Godlove || Full-Stack Web Developer">
 <meta property="og:description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
 <meta property="og:url" content="https://www.akalegodlove.netlify.app">
 <meta property="og:image" content="icons/favicon.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content=" Akale Godlove || Full-Stack Web Developer">
+<meta name="twitter:title" content="Akale Godlove || Full-Stack Web Developer">
 <meta name="twitter:description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
 <meta name="twitter:url" content="https://www.akalegodlove.netlify.app">
 <meta name="twitter:image" content="icons/favicon.png">
@@ -21,8 +21,6 @@
 <link rel="stylesheet"  href="style/main.css">
 <link rel="stylesheet" href="style/output.css">
 <title> Akale Godlove || Full-Stack Web Developer</title>
-
-
 <!--data tracking code google analytic -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKFCGQEMX1"></script>
@@ -35,34 +33,33 @@
 </script>
 	</head>
 <body>
-	<main>
 
-	<div class="left">	
-	<div class="bars" id="openmenu">
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"></div>
-	</div>
-	<div class="menu" id="menu">
-<div class="inner-menu">
-	<div class="upper-menu">
-			<div id="close">&times;</div>
-		<div class="name">
-		<h1><span class="g">G</span>odlove</h1>
+  <!-- MENU BUTTON -->
+  <div onclick="openMenu()" class="lg:hidden cursor-pointer menu_button fixed top-4 right-8 bg-white text-4xl p-2 rounded-md z-50 ">
+   <i class="fa-solid fa-bars text-black "></i>
+  </div>
+  <!-- /MENU_BUTTON -->
+
+  <main class="w-full relative lg:flex  ">
+    <div id="sideMenu" class="section_menu fixed lg:relative z-50 lg:z-0 bg-[#2E2E2C] w-full lg:w-1/3 h-0 lg:h-[100vh] overflow-hidden transition-all ease-in-out duration-300 ">
+<div class="inner_wrapper w-full h-full p-3">
+  	<div class="upper-menu_name relative w-full">
+			<div onclick="closeMenu()" class=" cursor-pointer border absolute top-0 right-4 lg:hidden"><i class="fa-solid  text-3xl fa-circle-xmark"></i></div>
+		<div class="name w-full my-6 flex justify-center items-center flex-col border-b-2 pb-4">
+		<h1 class="text-6xl font-bold"><span class="g">A</span>Kale</h1>
+    	<p>Web Developer</p>
 		</div>
-		<p>Web Developer</p>
 </div>
-<div class="lower-menu">
+<div class="lower-menu w-full p-3">
 	<ul>
-		<li><a  href="index.html">Home</a></li>
-		<li><a  href="#skills">My skills</a></li>
-		<li><a target="_blank"  href="projects.html">Work</a></li>
-		<li><a target="_blank"  href="https://hashnode.com/@Godlove">Blog</a></li>
-		<li><a  href="#contact">Contact</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="index.html">Home</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="index#skills">My skills</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear" target="_blank"  href="projects.html">Work</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear" target="_blank"  href="https://hashnode.com/@Godlove">Blog</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="#contact">Contact</a></li>
 	</ul>
 </div>
-<div class="socila">
+<div class="social_media w-full flex justify-evenly items-center mt-10 ">
 <a target="_blank" title="instagram" href="https://www.instagram.com/nagxderealflexgod">	
 	<i class="fa-brands fa-instagram fa-shake text-3xl mx-2"></i>
 </a>
@@ -78,50 +75,45 @@
 
 </div>
 </div>
-	</div>
-</div>
+    </div>
 
-<div class="right">
-	<div id="lineDrawing">
-<svg viewBox="0 0 792 512">
-<g class="lines">
-<path class="my-path" d="M296.7,240.8l-11.4,92.1h-20.7l4.9-39.2h-33.2l-4.9,39.2h-20.7l11.4-92.1h20.7l-4.8,38.9h33.2l4.8-38.9H296.7z"
-	/>
-<path class="my-path" d="M332.2,256.6l-2.7,22.2h26l-2,15.3h-25.9l-2.8,22.8h34.3l-2,15.9h-55l11.4-92.1h54.8l-2,15.9H332.2z"/>
-<path class="my-path" d="M423.3,316.4l-2,16.4h-51.6l11.4-92.1h20.6l-9.4,75.6H423.3z"/>
-<path class="my-path" d="M485.2,316.4l-2,16.4h-51.6l11.4-92.1h20.6l-9.4,75.6H485.2z"/>
-<path class="my-path" d="M580.2,280.9c0,19.5-10,38.7-27.8,47.6c-16.6,8.3-38.7,7.5-51.7-6.9c-13-14.5-12.6-37.5-4.3-54.2
-	c8.7-17.5,26.9-28.2,46.4-27.6c10.2,0.3,20.1,4.3,27,11.9C577,259.6,580.2,270.3,580.2,280.9z M559.1,281.4c0-11.3-5-23.5-17.6-25
-	c-11.6-1.4-21.5,5.5-26.1,15.9c-4.5,10.2-5.8,24.5-0.8,34.7c5.3,10.6,18.5,13.1,28.6,7.9C555.3,308.6,559.1,293.9,559.1,281.4z"/>
-  </g>
-</svg>
-  
+
+   
+     <!-- section main content -->
+ <section class="main_section w-full relative overflow-hidden overflow-y-scroll h-screen lg:h-[100vh] ">
+         
+     <div class="hero_wrapper  w-full h-full flex justify-center items-center flex-col ">
+
+	<div id="lineDrawing" class="typewriter text-8xl font-bold italic mb-12">
+  <h2>HELLO</h2>
   </div>
 
 
-<div class="top">
-		<div class="name">
-	<div class="intro">
-<h1 class="text-[3.5rem]">I'm <span class="g">Godlove</span>,</h1>
-<h2 class="">Full-Stack Web Developer</h2>
+<div class="hero_top">
+	<div class="intro my-4 flex justify-center items-center flex-col">
+<h1 class="text-6xl font-bold">I'm <span class="g">AKALE</span>,</h1>
+ <p>a full-stack Web Developer</p>
 	</div>
-	<!-- <p class="tagline">
-		Frontend End Developer
-	</p> -->
-	</div>
-	<div class="contact_me">
-	<nav>
-        <ul>
-            <li>Contact Me !
-            <span></span><span></span>
-            <span></span><span></span>
-            </li>
-				</ul>
+	
+<div class="tagline my-8  text-center font-semibold">
+ Empowering Brands in the Digital Frontier and Unlocking Online Visibility for Brands.
+</div>
+
+  <!-- CONTACT-ME-BUTTON -->
+	<div class="contact_me font-bold  w-full flex justify-center items-center">
+<a href="mailto:akalegodlove@gmail.com" class="border-2 w-1/2 border-teal-500 text-white font-bold rounded-md p-2 bg-teal-500 transition-all ease-in-out hover:bg-white hover:text-teal-500 text-center shadow-md"> <span>CONTACT ME </span> <i class="fa-solid fa-face-laugh-wink fa-bounce"></i> </a>
 	</nav>
 	</div>
-	<div class="scrollBtn w-full h-full flex justify-center items-center bottom-0 mt-12">
-		<img src="icons/arrow-141-64.png" alt="chevron-up" width="80px">
+
+  <!-- SCROLL-TO-TOP-BUTTON -->
+	<div class="scrollBtn w-full h-full flex justify-center items-center bottom-0 ">
+		<img src="icons/arrow.png" alt="chevron-up" width="80px">
 	</div>
+
+</div>
+
+  
+    <!-- HERO-BACKGROUND-ANIMATION -->
 	<div class="bg-anime">
 		<div class="parts p1"></div>
 		<div class="parts p2"></div>
@@ -144,164 +136,316 @@
 		<div class="parts p19"></div>
 		<div class="parts p20"></div>
 	</div>
-</div>
-
-<div class="container">
 
 </div>
 
-<div class="portfolio">
-	<h1>My Portfolio</h1>
-<div class="desc">
-		<p>A small gallery of recent projects chosen by me. It's only a drop in the ocean compared to the entire list.Interested to see some more? Visit my work page.</p>
-	<div class="link">
+
+<!-- REST OF THE CONTENT -->
+<div class="rext_of_content w-full p-4 lg:p-12 ">
+  
+<!-- portfolio -->
+  <div class="portfolio my-8 font-semibold">
+	<h3 class="mb-2 text-4xl">My Portfolio</h3>
+<div class="desc mb-8">
+		<p>A small gallery of recent projects chosen by me. It's only a drop in the ocean compared to the entire list.</p>
+	<div class="hidden link font-bold">
 			<nav>
         <ul>
-            <li><a target="_blank"  href="projects.html">See More !</a>
+            <li><a target="_blank"  href="projects.html" >See More !</a>
             <span></span><span></span>
             <span></span><span></span>
             </li>
 				</ul>
 	</nav>
 	</div>
-	<div class="work">
+	<div class="hidden work">
 	<p>	WORK</p>
 	</div>
 </div>
 </div>
 
-<div class="my_projects border-red-500 border-4">
-projects
+<div class="my_projects my-8 font-semibold">
+  <div class="projects w-full grid gap-3 grid-cols-1 lg:grid-cols-2">
+
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/restou.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a href="https://restou.net">Live site</a>
+      </div>
+    </div>
+
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"   src="projects/Screenshot.png"  alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a href="https://iconzapp.com">Live Site</a>
+      </div>
+    </div>
+
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/nst.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a href="https://nstorganics.online">Live Site</a>
+      </div>
+    </div>
+
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/superfood.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a href="">Live Site</a>
+      </div>
+    </div>
+
+    
+    
+  </div>
+
+</div>
+
+<div class="see_more w-full flex justify-center items-center my-8">
+  <a class=" p-2 bg-teal-500 text-xl  text-center hover:bg-white hover:text-teal-500" href="projects.html">See more projects</a>
 </div>
 
 
-<div class="about">
-	<h1>About Me</h1>
-	<div class="info">
-<div class="desc">
-	<p class="mt-2">
+  <div class="my-12 font-semibold">
+	<h3 class="text-4xl">Empower Your Brand in the Digital Frontier</h3>
+<div>
+		<p>Take control of your online presence and unlock the true potential of your brand. Stand out, connect with your audience, and thrive in the ever-evolving digital landscape.</p>
+</div>
+</div>
+
+<div class="about my-12 font-semibold">
+	<h3 class="mb-2 mt-8 text-4xl">About Me</h3>
+	
+	<p class="">
 As a passionate <span class="special underline ">tech enthusiast</span>, my expertise lies in creating <span class="special underline ">bespoke</span> websites that <span class="special underline ">empower</span> individuals and businesses to thrive <span class="special underline ">online</span>. 
 	</p>
 	
 	<p class="mt-6">
-With a primary focus on front-end development, I bring <span class="special underline ">concepts to life</span> by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am <span class="special underline  underline ">dedicated</span> to delivering an exceptional user experience.
+With a primary focus on front-end development, I bring <span class="special underline ">concepts to life</span> by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am <span class="special underline">dedicated</span> to delivering an exceptional user experience that your clients will love.
 	</p>
 	
 	<p class="mt-6">
 By leveraging my skills in concept navigation and programming, I ensure that every website I create is <span class="special underline ">tailor-made</span> to help my clients go further in the digital realm.
 	</p>
 	
-	<p class="mt-6 text-center underline ">
-Let's collaborate and bring your online vision to reality!
-	</p>
-	
-	 
-</div>
-<div class="skillset mt-10">
-<h1>My Skills</h1>
-	<div class="container" id="skills">
-	
-		<div class="skills">
-				
-<div class="skill">
-	<p>HTML/HTML5</p>
+
 </div>
 
-	
-<div class="skill">
-<p>CSS/CSS3</p>
-</div>
-			
-				
-<div class="skill">
-<p>SASS</p>
-</div>
-	
-<div class="skill">
-<p>JAVASCRIPT</p>
-</div>
-	
-<div class="skill">
-<p>PHP</p>
-</div>
-	
-<div class="skill">
-<p>MYSQL</p>
-</div>
-	
-<div class="skill">
-	<p>REACT.JS</p>
-</div>
-	
-<div class="skill">
-<p>PREMIERE/PHOTOSHOP</p>
-</div>
-
-		</div>
 
 
+ <div class="my-12 font-semibold">
+	<h3 class="text-4xl">Unlock Online Visibility for Your Brand.</h3>
+<div>
+		<p>Don't let your brand go unnoticed in the vast online world. Gain the visibility you deserve, attract more customers, and leave a lasting impression. Let us help you make your mark and rise above the competition.</p>
+</div>
+</div>
+
+
+
+
+<div class="skillset mt-12 relative w-full font-semibold" id="skills">
+<h3 class="my-4 text-6xl">My Skills</h1>
+	<div class="container ">
+	<div class="skillset w-full grid grid-cols-3 gap-3 lg:grid-cols-4 p-2">
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+          <i class="fa-brands fa-html5 text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          HTML5
+        </div>
+      </div>
+    <!-- /skill -->
+
+     <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-brands fa-css3-alt text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          CSS3
+        </div>
+      </div>
+    <!-- /skill -->
+
+     <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-brands fa-sass text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          SASS
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+        <i class="fa-brands fa-js text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          JAVASCRIPT
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-brands fa-react text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+         REACT.JS
+        </div>
+      </div>
+    <!-- /skill -->
+
+  
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-brands fa-css3-alt text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+         TAILWIND CSS
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-brands fa-php text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          PHP
+        </div>
+      </div>
+    <!-- /skill -->
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-solid fa-fire text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          FIREBASE
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-solid fa-fire text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+         MySQL
+        </div>
+      </div>
+    <!-- /skill -->
+
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-solid fa-fire text-4xl"></i>
+        </div>
+        <div class="name_skill font-bold">
+          CANVA
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-solid fa-image text-3xl"></i>
+        </div>
+        <div class="name_skill font-bold text-sm">
+         PHOTOSHOP
+        </div>
+      </div>
+    <!-- /skill -->
+
+    <!-- skill -->
+      <div class="skill flex justify-center items-center flex-col text-center rounded-full p-2 bg-white text-black">
+        <div class="icon">
+         <i class="fa-solid fa-photo-film text-2xl"></i>
+        </div>
+        <div class="name_skill font-bold text-sm">
+         PREMIERE PRO
+        </div>
+      </div>
+    <!-- /skill -->
+
+
+</div>
 	</div>
-
-</div>
-	</div>
-	<div class="me">
+	<div class="me hidden absolute top-0 right-0  text-9xl">
 		<p>ME</p>
 	</div>
 </div>
 
-<div class="contact p-4" id="contact">
-	<h1>Contact me</h1>
+
+
+  
+<!-- CONTACT-ME -->
+<div class="contact mt-12 font-semibold" id="contact">
+	<h3 class="mb-2 mt-8 text-6xl"> Let's make it happen!</h1>
 	<p>
-		I’m interested in freelance opportunities – especial underline ly ambitious or large projects. However, if you have other request or question, don’t hesitate to use to .
+		Let's Collaborate and Bring Your Online Vision to Reality: Together, we'll turn your digital dreams into a tangible online presence. With my <span class="special underline ">expertise & your vision</span> , we'll create a compelling brand experience that captivates your audience and drives your <span class="special underline "> success</span>.
 	</p>
 	<div class="w-full flex justify-center items-center my-6 ">
-  <a href="mailto:akalegodlove@gmail.com" class="border-2 w-1/2 border-teal-500 text-white font-bold rounded-md p-2 bg-teal-500 transition-all ease-in-out hover:bg-white hover:text-teal-500 text-center"> <span>Say Hi !!</span> <i class="fa-solid fa-face-laugh-wink fa-bounce"></i> </a>
+  <a href="mailto:akalegodlove@gmail.com" class="border-2 w-1/2 border-teal-500 text-white font-bold rounded-md p-2 bg-teal-500 transition-all ease-in-out hover:bg-white hover:text-teal-500 text-center shadow-md"> <span>say hi to me</span><i class="fa-solid fa-face-smile-wink fa-flip ml-2"></i></a>
 </div>
 </div>
-<div class="socials">
+
+
+<div class="socials w-full flex justify-center items-center mt-8">
 	<p>Keep in-Touch 😉 :</p>
-	<div class="soc-icons">
+	<div class="soc-icons mx-2">
 <a target="_blank" title="instagram" href="https://www.instagram.com/nagxderealflexgod">	
-	<i class="fa-brands fa-instagram fa-shake text-3xl mx-2"></i>
+	<i class="fa-brands fa-instagram fa-shake text-2xl mx-2"></i>
 </a>
 <a target="_blank" title="twitter" href="https://twitter.com/akalegodlove?t=TaeFTxcc0lgci34tP4lsGA&s=35">
-	<i class="fa-brands fa-x-twitter fa-shake text-3xl mx-2"></i>
+	<i class="fa-brands fa-x-twitter fa-shake text-2xl mx-2"></i>
 </a>
 <a target="_blank" title="github"  href="https://github.com/Godlove1">
-	<i class="fa-brands fa-github fa-shake text-3xl mx-2"></i>
+	<i class="fa-brands fa-github fa-shake text-2xl mx-2"></i>
 </a>
 <a target="_blank" title="linkedin" href="https://www.linkedin.com/in/akalegodlove">
-	<i class="fa-brands fa-linkedin fa-shake text-3xl mx-2"></i>
+	<i class="fa-brands fa-linkedin fa-shake text-2xl mx-2"></i>
 </a>
 	</div>
 </div>
 
 
-<!-- <div class="animation" id="loader">
-<div class="load">
-		<div class="loading">
-		<h1 class="ml5">
-  <span class="text-wrapper">
-    <span class="line line1"></span>
-    <span class="letters letters-left">Akale</span>
-    <span class="letters ampersand">&nbsp;</span>
-    <span class="letters letters-right">Godlove</span>
-    <span class="line line2"></span>
-  </span>
-</h1>
-	</div>
+
 </div>
-</div> -->
-</main>
-	<script>
-	window.onbeforeunload = () => {
-  for(const form of document.getElementsByTagName('form')) {
-    form.reset();
-  }
-}
+
+</div>
+
+        </section>
+      <!-- section main content -->
+  </main>
+
+<script src="js/tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".project_temp"), {
+		max: 25,
+		speed: 400
+	});
 </script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="js/loader.js"></script>
-	<script src="js/menu.js"></script>
+<script src="js/menu.js"></script>
 </body>
 </html>

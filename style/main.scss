@@ -8,8 +8,8 @@
 
 	:root{
 		--prm-color: rgb(5, 5, 5);
-		--clr:white;
-		--clr2:#08fdd8;
+		--color:white;
+		--color2:#08fdd8;
 	}
 
 	body {
@@ -17,20 +17,24 @@
 	height: 100%;
 	background-image: linear-gradient(180deg, #373734 0%, #242423 52%, #0D0D0C 100%);
 	color: white;
-	overflow: hidden scroll;
 	font-family: 'Raleway', sans-serif;
 	}
 
-	h1{
+	
+	h1,h3{
 		font-family: 'Lobster', cursive;
 		letter-spacing: 1px;
 	}
 
-	.special{
-		color: #08fdd8;
+	h3{
+        color: var(--color2);
 	}
 
-		//buTton animation
+		.g{
+		text-shadow: -4px 2px  red,-6px 2px var(--color2);
+	}
+
+	// CONTACT-ME-BUTTON ANIME
 	nav{
 		ul{
 		list-style-type: none;
@@ -40,7 +44,6 @@
 
 	li{
 		color: var(--clr2);
-		font-size: 15px;
 		border:1px solid var(--clr2);
 		border-radius: 0.5em;
 		width: 10em;
@@ -71,7 +74,7 @@
 	{
 		color: #fff;
 		cursor: pointer;
-			border: 1px solid #e84a5f;
+		border: 1px solid #e84a5f;
 	}
 	&:hover span
 	{
@@ -96,218 +99,7 @@
 	}
 		}
 	}
-			//gradient border animation
-	.container{
-		position: relative;
-		width:100%;
-		background: linear-gradient(0deg,#000,#262626);
-		box-shadow: 1px 5px 15px rgba(0,0,0,1);
-		margin: 10px 0;
-		
-	&:before,&:after{
-		content: '';
-		position: absolute;
-		top: -5px;
-		left: -5px;
-		width: calc(100% + 10px);
-		height: calc(100% + 10px);
-		background: linear-gradient(45deg,#fa7e1e,#f3da75,#00ffd5,#fd1d1d,#ff0000,#fa7e1e,#f3da75,#00ffd5,#fd1d1d,#ff0000);
-		background-size: 400%;
-		z-index: -1;
-		animation: animate 20s linear infinite;
-	}
 
-	&:after
-	{
-		filter: blur(20px);
-	}
-
-
-
-	@keyframes animate {
-		0%{ background-position: 0 0;}
-		50% { background-position: 300% 0;}
-			100%{ background-position: 0 0; }
-	}
-	}
-
-
-	.bars{
-		width: 50px;
-		height: 50px;
-		position:fixed;
-		top: 10px;
-		right: 10px;
-		padding: 10px;
-		background: var(--prm-color);
-		z-index: 1;
-
-		.bar{
-			width: 100%;
-			height: 5px;
-			background-color: var(--clr);
-			margin: 3px;
-		}
-
-	}
-
-	.menu{
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		left: 0;
-		background: grey;
-		display: none;
-		z-index: 3;
-
-		.inner-menu{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			flex-direction: column;
-
-			.upper-menu{
-				position: relative;
-				width: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				flex-direction: column;
-				background: black;
-				padding: 50px 0 20px 0;
-
-
-				#close{
-					position: absolute;
-					right: 10px;
-					top: 10px;
-					font-size: 3rem;
-					font-weight: bold;
-					cursor: pointer;
-					&:hover{
-						color: red;
-					}
-				}
-				P{
-					margin: 10px 0;
-					font-size: 1rem;
-					color: #a5a5a5;
-				}
-
-				.name{
-					cursor: pointer;
-					
-	.g{
-		text-shadow: -4px 2px  red,-6px 2px var(--clr2);
-	}
-					h1{
-						font-size: 3rem;
-					}
-				}
-			}
-
-			.lower-menu{
-				background: rgb(27, 27, 27);
-				width: 100%;
-				height: 100%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				ul{
-					width: 100%;
-					list-style: none;
-					li{
-						width: 100%;
-						border-bottom: 1px solid #5a5a5a;
-						padding: 10px 0;
-						margin: 10px 0;
-
-						a{
-							text-decoration: none;
-							font-size: 1.2rem;
-							display: flex;
-				justify-content: center;
-				align-items: center;
-				color: silver;
-			
-				&:hover{
-						color: #08fdd8;
-				}
-						}
-					}
-				}
-			}
-			.socila{
-				width: 100%;
-				background: rgb(27, 27, 27);
-			
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				img{
-					width: 24px;
-					margin: 0 5px;
-				}
-			}
-		}
-	}
-
-	.my-path {
-	fill:none;
-	stroke:var(--clr2);
-	stroke-width:6;
-	}
-
-	#lineDrawing{
-		width: 340px;
-		height: 80px;
-		margin-left: -50px;
-		margin-top: 10px;
-	}
-
-	.top{
-		position: relative;
-		width: 100%;
-		// height: 100vh;
-		padding-top: 80px;
-		padding-bottom: 80px;
-
-		h1{
-			font-family: 'Raleway', sans-serif;
-		}
-	.contact_me{
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-top: 60px ;
-	}
-
-	.name{
-		font-size: 3rem;
-		margin-top: 30px;
-		padding-left: 40px;
-	.g{
-		text-shadow: -4px 2px  red,-6px 2px var(--clr2);
-		font-family: 'Lobster', cursive;
-		letter-spacing: 4px;
-		margin-left: 15px;
-	}
-		.tagline{
-			font-size: 1rem;
-		padding-left: 60px;
-		color: #a5a5a5;
-		}
-	}
-
-	.name h2{
-		font-size: 1.2rem;
-	}
 	
 	.scrollBtn{
 		img{
@@ -495,288 +287,80 @@
 		
 	}
 
-
+	.special{
+		color: #08fdd8;
 	}
 
-	.portfolio{
-		margin: 150px 0 80px 0;
-		padding: 0 20px;
-		h1{
-	font-size: 55px;
-	color: var(--clr2);
-	margin: 30px 0;
-		}
-
-		.desc{
-		//	width: 100%;
-			p{
-			margin-bottom: 20px;
-			}
-			a{
-				text-decoration: none;
-				color: #08fdd8;
-				&:hover{
-					color: var(--clr);
-				}
-			}
-		}
-		.work{
-			display: none;
-		}
-	}
-
-
-	.about{
-		padding:0 15px ;
-		margin: 100px 0;
-		h1{
-			color: var(--clr2);
-			font-size: 3rem;
-			margin: 15px 0;
-		}
-
-		.me{
-			display: none;
-		}
-	}
-
-	.contact{
-		padding:0 10px ;
-		h1{
-			color:var(--clr2);
-			font-size: 3rem;
-		}
-		p{
-			margin: 20px 0;
-			//font-size: 1.10rem;
-		}
-		.contact{
-			display: none;
-		}
-	}
-
-	.socials{
-		padding: 10px;
-		margin-bottom: 20px;
-		text-align: center;
-		p{
-			margin: 10px;
-			font-size: 1.10rem;
-		}
-		.soc-icons{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	img{
-		width: 30px;
-		margin: 0 5px;
-	}
-		}
-	}
-	
-	//animation/loading screen
-	.animation{
-		width: 100%;
-		height: 100vh;
-		position: fixed;
-		top: 0;
-		//display: none;
-		color: white;
-		background: var(--prm-color);
-		z-index: 3;
-
-		.load{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-		.loading{
-			width: 100%;
-			.ml5 {
-	position: relative;
-	font-weight: 300;
-	font-size: 4.5em;
-	color: var(--clr2);
-
-	.text-wrapper {
-			width: 100%;
-	position: relative;
-	display: inline-block;
-	padding-top: 0.1em;
-	padding-right: 0.05em;
-	padding-bottom: 0.15em;
-	line-height: 1em;
-		text-align: center;
-	}
-
-	.line {
-	position: absolute;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	margin: auto;
-	height: 3px;
-	width: 100%;
-	background-color: var(--clr2);
-	transform-origin: 0.5 0;
-	}
-
-	.ampersand {
-	font-family: Baskerville, serif;
-	font-style: italic;
-	font-weight: 400;
-	width: 1em;
-	margin-right: -0.1em;
-	margin-left: -0.1em;
-		opacity: 0;
-	}
-
-	.letters {
-	display: inline-block;
-	opacity: 0;
-		font-size: 2.8rem;
-	}
-		}
-	}
-	}
-
-
-	@media(min-width:992px){
-		main{
-			width: 100%;
-			height: 100%;
-			display: flex;
-			justify-content: space-between;
-		}
-		.left{
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 15%;
-			height: 100vh;
-			overflow: hidden;
-			.bars{
-				display: none;
-			}
-			.menu{
-				display: block;
-	position: relative;
-			}
-			
-				#close{
-				display: none;
-				}
-		}
-
-		.right{
-			width: 85%;
-			margin-left: 15%;
-		
-
-	.my-path {
-	stroke-width:6;
-	}
-	#lineDrawing{
-		height: 120px;
-		margin-left: -35px;
-		margin-top: 20px;
-
-	}
-			.top{
-				padding-top: 20px;
-			.name{
-				font-size: 2.3rem;
-			}
-			.tagline{
-				font-size: 1.5rem;
-				padding-left: 100px;
-			}
-			
-	.a{
-		padding-top: 70px ;
-		padding-left: 150px;
-	}
-
-			}
-		}
-		.portfolio{
-			position: relative;
-			.desc{
-				width: 100%;
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-
-				p{
-					width: 100%;
-					font-size: 1.5rem;
-				}
-			.link{
-				display: flex;
-				justify-content: center;
-				align-items: center;
-					width: 100%;
-					a{
-						width: auto;
-						padding: 15px 50px;
-					}
-				}
-			}
-			.work{
-				display: block;
-				position: absolute;
-				bottom: -270px;
-				right: 20px;
-				color: #5a5a5a;
-				z-index: -1;
-				P{
-	font-size: 15rem;
-				}
-			}
-		}
-		
-
-	.about{
+	//gradient border animation
+	.container{
 		position: relative;
-		.info{
-			.desc{
-				p{
-					font-size: 1.5rem;
-				}
-			}
-		}
-		.me{
-			display: block;
-				position: absolute;
-				bottom: -30px;
-				right: 20px;
-				color: #5a5a5a;
-				z-index: -1;
-				P{
-	font-size: 15rem;
-				}
-			}
+		width:100%;
+		background: linear-gradient(0deg,#000,#262626);
+		box-shadow: 1px 5px 15px rgba(0,0,0,1);
+		margin: 10px 0;
+		
+	&:before,&:after{
+		content: '';
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		width: calc(100% + 10px);
+		height: calc(100% + 10px);
+		background: linear-gradient(45deg,#fa7e1e,#f3da75,#00ffd5,#fd1d1d,#ff0000,#fa7e1e,#f3da75,#00ffd5,#fd1d1d,#ff0000);
+		background-size: 400%;
+		z-index: -1;
+		animation: animate 20s linear infinite;
 	}
 
-	.contact{
-
-		position: relative;
-		p{
-			font-size: 1.5rem;
-		}
-		.contact{
-				display: block;
-				position: absolute;
-				bottom: -60px;
-				right: 20px;
-				color: #5a5a5a;
-				z-index: -1;
-				P{
-	font-size: 8rem;
-				}
-			}
+	&:after
+	{
+		filter: blur(20px);
 	}
+
+
+
+	@keyframes animate {
+		0%{ background-position: 0 0;}
+		50% { background-position: 300% 0;}
+			100%{ background-position: 0 0; }
+	}
+	}
+
+
 	
-	}
+/* DEMO-SPECIFIC STYLES */
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+.skill{
+	box-shadow: inset 0 12px 2px 3px  gray;
+}
+
+ .project_temp{
+	border-radius: 10px;
+	border: 2px solid white;
+	overflow: hidden;
+	box-shadow: 0 0 8px 1px  teal; 
+ }

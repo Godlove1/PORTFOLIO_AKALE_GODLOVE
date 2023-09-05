@@ -1,8 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Akale Godlove|Frontend Web Developer</title>
-	<!--google analytics code-->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="N-dc-MhGpcDIh5NR_V6ufAq-lu2rcMtCt-SECtgoPsk" />
+<link rel="shortcut icon" href="icons/favicon.png" type="image/png">
+<meta name="keywords" content="Akale Godlove, Freelance web developers in Cameroon,Hire web developer in Cameroon,silicon mountain, tech communities in cameroon ,web Developers in cameroon,Top web developers in Cameroon,Web development community in Cameroon, Cameroonian web development companies, top web Developers in cameroon, building websites in cameroon">
+<meta name="description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
+<meta property="og:title" content="Akale Godlove || Full-Stack Web Developer">
+<meta property="og:description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
+<meta property="og:url" content="https://www.akalegodlove.netlify.app">
+<meta property="og:image" content="icons/favicon.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Akale Godlove || Full-Stack Web Developer">
+<meta name="twitter:description" content="As a passionate tech enthusiast, my expertise lies in creating bespoke websites that empower individuals and businesses to thrive online. With a primary focus on front-end development, I bring concepts to life by seamlessly bridging the gap between design and functionality. From translating Figma or Adobe XD designs into pixel-perfect websites to crafting intuitive user interfaces, I am dedicated to delivering an exceptional user experience. By leveraging my skills in concept navigation and programming, I ensure that every website I create is tailor-made to help my clients go further in the digital realm. Let's collaborate and bring your online vision to reality!">
+<meta name="twitter:url" content="https://www.akalegodlove.netlify.app">
+<meta name="twitter:image" content="icons/favicon.png">
+<script src="https://kit.fontawesome.com/3ecb4095fb.js" crossorigin="anonymous"></script>
+<link rel="stylesheet"  href="style/main.css">
+<link rel="stylesheet" href="style/output.css">
+<title> My Projects </title>
+<!--data tracking code google analytic -->
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKFCGQEMX1"></script>
 <script>
@@ -12,369 +31,249 @@
 
   gtag('config', 'G-PKFCGQEMX1');
 </script>
-	<!--google analytics code-->
-	
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-<link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-<meta name="description" content="JavaScript wizard, chaotic good">
-<meta name="keyword" content="portfolio, javascript, developer">
-<meta name="description" content="freelance web developer">
-<meta name="keywords" content="website, portfolio, developer,css, HTML5, programmer, hire, freelance">
-<meta name="description" content="Akale Godlove">
-<meta name="description" content=" welcome to my site, my portfolio">
-<link rel="stylesheet" href="style/main.css">
 	</head>
 <body>
-	<div class="bars" id="openmenu">
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"></div>
-		<div class="bar"></div>
-	</div>
-	<div class="menu" id="menu">
-<div class="inner-menu">
-	<div class="upper-menu">
-			<div id="close">&times;</div>
-		<div class="name">
-		<h1> <span class="g">G</span>odlove</h1>
+
+  <!-- MENU BUTTON -->
+  <div onclick="openMenu()" class="lg:hidden cursor-pointer menu_button fixed top-4 right-4 bg-white text-4xl p-2 rounded-md z-50 ">
+   <i class="fa-solid fa-bars text-black "></i>
+  </div>
+  <!-- /MENU_BUTTON -->
+
+  <main class="w-full relative lg:flex  ">
+    <div id="sideMenu" class="section_menu fixed lg:relative z-50 lg:z-0 bg-[#2E2E2C] w-full lg:w-[25%] h-0 lg:h-[100vh] overflow-hidden transition-all ease-in-out duration-300 ">
+<div class="inner_wrapper w-full h-full p-3">
+  	<div class="upper-menu_name relative w-full">
+			<div onclick="closeMenu()" class=" cursor-pointer border absolute top-0 right-4 lg:hidden"><i class="fa-solid  text-3xl fa-circle-xmark"></i></div>
+		<div class="name w-full my-6 flex justify-center items-center flex-col border-b-2 pb-4">
+		<h1 class="text-6xl font-bold"><span class="g">G</span>odlove</h1>
+    	<p>Web Developer</p>
 		</div>
-		<p>Web Developer</p>
 </div>
-<div class="lower-menu">
+<div class="lower-menu w-full p-3">
 	<ul>
-		<li><a  href="index.html">Home</a></li>
-		<li><a  href="#skills">My skills</a></li>
-		<li><a target="_blank"  href="projects.html">Work</a></li>
-		<li><a target="_blank"  href="https://hashnode.com/@Godlove">Blog</a></li>
-		<li><a  href="#contact">Contact</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="index.html">Home</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="index.html#skills">My skills</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear" target="_blank"  href="projects.html">Work</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear" target="_blank"  href="https://hashnode.com/@Godlove">Blog</a></li>
+		<li class="p-4 border-b text-center font-bold text-2xl"><a class="hover:text-cyan-400 transition-all ease-linear"  href="#contact">Contact</a></li>
 	</ul>
 </div>
-<div class="socila">
-<a target="_blank"  href="https://www.instagram.com/nagxderealflexgod">	<img src="icons/ig.png" alt="ig"></a>
-<a target="_blank"  href="https://www.linkedin.com/akalegodlove/">	<img src="icons/linkedin-4-24.png" alt="linkedin"></a>
-<a target="_blank"  href="https://github.com/Godlove1"><img src="icons/git.png" alt="twiter"></a>
-<a target="_blank"  href="https://mobile.twitter.com/akalegodlove"><img src="icons/twitter-5-24.png" alt="twitter"></a>
-<a target="_blank"  href="https://flip2read.com/godlove"><img src="icons/f2r.png" alt="flip2read"></a>
+<div class="social_media w-full flex justify-evenly items-center mt-10 ">
+<a target="_blank" title="instagram" href="https://www.instagram.com/nagxderealflexgod">	
+	<i class="fa-brands fa-instagram fa-shake text-3xl mx-2"></i>
+</a>
+<a target="_blank" title="twitter" href="https://twitter.com/akalegodlove?t=TaeFTxcc0lgci34tP4lsGA&s=35">
+	<i class="fa-brands fa-x-twitter fa-shake text-3xl mx-2"></i>
+</a>
+<a target="_blank" title="github"  href="https://github.com/Godlove1">
+	<i class="fa-brands fa-github fa-shake text-3xl mx-2"></i>
+</a>
+<a target="_blank" title="linkedin" href="https://www.linkedin.com/in/akalegodlove">
+	<i class="fa-brands fa-linkedin fa-shake text-3xl mx-2"></i>
+</a>
+
 </div>
 </div>
-	</div>
-
-<div class="portfolio">
-	<h1>My Portfolio</h1>
-</div>
-<div class="projects">
-
-	<div class="project">
-<img loading="lazy"  src="projects/apex.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Apex-Legends/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-		<div class="project">
-<img loading="lazy"  src="projects/Gamemood.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Gamermood/">View Project</a></p>
-</div>
-</div>
-
-	</div>
+    </div>
 
 
-		<div class="project">
-<img loading="lazy"  src="projects/netcolne.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Netflix-landing-page-clone/">View Project</a></p>
-</div>
-</div>
+   
+     <!-- section main content -->
+<section class="main_section w-full relative overflow-hidden overflow-y-scroll h-screen lg:h-[100vh] ">
+    
 
-	</div>
+<!-- REST OF THE CONTENT -->
+<div class="rext_of_content w-full p-4 lg:p-12 ">
 
 
-		<div class="project">
-<img loading="lazy"  src="projects/blog.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/My-blog-in-html/">View Project</a></p>
-</div>
-</div>
+<div class="my_projects">
+	<h3 class="mb-8 text-4xl">My Projects</h3>
 
-	</div>
+  <div class="projects w-full grid gap-3 grid-cols-1 lg:grid-cols-2">
 
-		<div class="project">
-<img loading="lazy"  src="projects/mfile.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Music-player/">View Project</a></p>
-</div>
-</div>
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/restou.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://restou.net">Live site</a>
+      </div>
+    </div>
 
-	</div>
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"   src="projects/Screenshot.png"  alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://iconzapp.com">Live Site</a>
+      </div>
+    </div>
 
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/nst.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://nstorganics.online">Live Site</a>
+      </div>
+    </div>
 
-		<div class="project">
-<img loading="lazy"  src="projects/dal2.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="http://dalgames.epizy.com/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-		<div class="project">
-<img loading="lazy"  src="projects/hoodie.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Hoodie/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-	
-	
-
-		<div class="project">
-<img loading="lazy"  src="projects/tipcalc.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Tip-Calculator/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-		<div class="project">
-<img loading="lazy"  src="projects/ytclone.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/youtube-clone/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-	<!--mobile version screenshots-->
-<div class="project">
-<img loading="lazy"  src="projects/c2.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="http://cchat.epizy.com/cchat/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-	
-	
-		<div class="project">
-<img loading="lazy"  src="projects/e.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/artist-page/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-			<div class="project">
-<img loading="lazy"  src="projects/fbclone.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Facebook-LTE-frontend-clone/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/igclone.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Instagram-frontend-clone/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/infnxt.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/wordpress-infnxt/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-			<div class="project">
-<img loading="lazy"  src="projects/chatbot.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Chatbot/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/dalg.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="http://dalgames.epizy.com">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/rcity.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/237rapcity/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-			<div class="project">
-<img loading="lazy"  src="projects/passgen.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/password-generator/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/jsgame.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/javascript-game/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-
-			<div class="project">
-<img loading="lazy"  src="projects/profcalc.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Profit-Calculator/">View Project</a></p>
-</div>
-</div>
-
-	</div>
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/superfood.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="">Live Site</a>
+      </div>
+    </div>
 
 	
-			<div class="project">
-<img loading="lazy"  src="projects/3dkey.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/A-simple-car-key/">View Project</a></p>
-</div>
-</div>
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/Screenshot.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://iconzapp.com">Live Site</a>
+      </div>
+    </div>
 
-	</div>
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/sheyonce.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://sheyoncefashion.store/">Live Site</a>
+      </div>
+    </div>
 
+    
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/apex.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank"  href="https://godlove1.github.io/Apex-Legends/">Demo Site</a>
+      </div>
+    </div>
 
-			<div class="project">
-<img loading="lazy"  src="projects/wenong.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://ruthyfashion.000webhostapp.com">View Project</a></p>
-</div>
-</div>
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/c6.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="http://campuschat.epizy.com/cchat/">Demo Site</a>
+      </div>
+    </div>
 
-	</div>
+    
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/Gamemood.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a  target="_blank"  href="https://godlove1.github.io/Gamermood/">Demo Site</a>
+      </div>
+    </div>
+
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/hoodie.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank"  href="https://godlove1.github.io/Hoodie/">Demo Site</a>
+      </div>
+    </div>
+
 	
-	<div class="project">
-<img loading="lazy"  src="projects/lxcorp.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Luxscorp/">View Project</a></p>
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/tipcalc.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank"  href="https://godlove1.github.io/Tip-Calculator/">Demo Site</a>
+      </div>
+    </div>
+
+   
+    <div class="project_temp group border-2  relative w-full" data-tilt data-tilt-startX="20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/ytclone.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://godlove1.github.io/youtube-clone/">Demo Site</a>
+      </div>
+    </div>
+
+     <div class="project_temp border-2 borderblue-500" data-tilt data-tilt-startX="-20" data-tilt-startY="-20" data-tilt-reset-to-start="true" >
+     
+        <img loading="lazy"  src="projects/mfile.png" alt="">
+   
+      <div class="linker  border-2 absolute top-0 bg-teal-500 text-white rounded-sm p-2 ">
+        <a target="_blank" href="https://godlove1.github.io/music-tile/">Demo Site</a>
+      </div>
+    </div>
+
+    
+    
+    
+    
+  </div>
+
 </div>
-</div>
-
-	</div>
-	
-	
-	<div class="project">
-<img loading="lazy"  src="projects/ruthy.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="https://godlove1.github.io/Affilliat-Market-wesite/">View Project</a></p>
-</div>
-</div>
-
-	</div>
-
-<!--TEMPLATE
-			<div class="project">
-<img loading="lazy"  src="projects/e.png" alt="">
-<div class="view">
-	<div class="info">
-	<p><a target="_blank" href="">View Project</a></p>
-</div>
-</div>
-
-	</div>
--->
 
 
 
-</div>
-
-<div class="container"></div>
-<div class="contact" style="margin-top: 120px;"id="contact">
-	<h1>Contact me</h1>
+<!-- CONTACT-ME -->
+<div class="contact mt-12 font-semibold" id="contact">
+	<h3 class="mb-2 mt-8 text-6xl">Contact me</h1>
 	<p>
-		I’m interested in freelance opportunities – especially ambitious or large projects. However, if you have other request or question, don’t hesitate to use  my socials or the form .
+		Let's Collaborate and Bring Your Online Vision to Reality: Together, we'll turn your digital dreams into a tangible online presence. With my <span class="special underline ">expertise & your vision</span> , we'll create a compelling brand experience that captivates your audience and drives your <span class="special underline "> success</span>. Let's make it happen!
 	</p>
+	<div class="w-full flex justify-center items-center my-6 ">
+  <a href="mailto:akalegodlove@gmail.com" class="border-2 w-1/2 border-teal-500 text-white font-bold rounded-md p-2 bg-teal-500 transition-all ease-in-out hover:bg-white hover:text-teal-500 text-center shadow-md"> <span>say hi to me</span><i class="fa-solid fa-face-smile-wink fa-flip ml-2"></i></a>
 </div>
-<div class="socials">
-	<p>My Socials :</p>
-	<div class="soc-icons">
-		<a href="https://www.instagram.com/nagxderealflexgod">
-			<img src="icons/ig.png" alt="socialmediaicon"></a>
-	
-		<a href="https://mobile.twitter.com/akalegodlove">
-			<img src="icons/twitter-5-24.png" alt="socialmediaicon"></a>
-		<a href="https://github.com/Godlove1">
-			 <img src="icons/git.png"  class="ico"/> </a>
-<a href="https://www.linkedin.com/akalegodlove/">
-	<img src="icons/linkedin-4-24.png" class="ico" /></a>
-	<a href="https://www.linkedin.com/akalegodlove/">
-	<img src="icons/f2r.png" class="ico" /></a>
+</div>
+
+
+<div class="socials w-full flex justify-center items-center mt-8">
+	<p>Keep in-Touch 😉 :</p>
+	<div class="soc-icons mx-2">
+<a target="_blank" title="instagram" href="https://www.instagram.com/nagxderealflexgod">	
+	<i class="fa-brands fa-instagram fa-shake text-2xl mx-2"></i>
+</a>
+<a target="_blank" title="twitter" href="https://twitter.com/akalegodlove?t=TaeFTxcc0lgci34tP4lsGA&s=35">
+	<i class="fa-brands fa-x-twitter fa-shake text-2xl mx-2"></i>
+</a>
+<a target="_blank" title="github"  href="https://github.com/Godlove1">
+	<i class="fa-brands fa-github fa-shake text-2xl mx-2"></i>
+</a>
+<a target="_blank" title="linkedin" href="https://www.linkedin.com/in/akalegodlove">
+	<i class="fa-brands fa-linkedin fa-shake text-2xl mx-2"></i>
+</a>
 	</div>
 </div>
-<form action="">
 
-	<div class="user-info">
-		<input type="text" name="username" placeholder="Name">
-		<input type="email" name="email" placeholder="Email">
-	</div>
-<input type="text" name="subject" placeholder="Subject">
-<textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-<input type="submit" value="Send message!" name="send_sms">
-</form>
 
-	<script src="js/menu.js"></script>
+</div>
+
+</div>
+
+        </section>
+      <!-- section main content -->
+  </main>
+
+
+
+
+<script src="js/tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".project_temp"), {
+		max: 25,
+		speed: 400
+	});
+</script>
+<script src="js/menu.js"></script>
 </body>
 </html>

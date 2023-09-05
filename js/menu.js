@@ -1,17 +1,13 @@
-let closeMenu = document.getElementById("close");
-let menuWindow = document.getElementById("menu");
-let openmenu = document.querySelectorAll(".bar");
 
+let menuWindow = document.getElementById("sideMenu");
 
-closeMenu.onclick = function () {
-	menuWindow.style.display = "none";
-}
+function closeMenu() {
+	  menuWindow.style.height = "0";
+  }
 
+function openMenu() {
+	  menuWindow.style.height = "100vh";
+  }
 
-openmenu.forEach(bar => {
-	bar.addEventListener("click", () => {
-	menuWindow.style.display = "block";
-})
-})
 	
 	
